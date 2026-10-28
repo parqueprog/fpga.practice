@@ -12,7 +12,7 @@ module led_pwm(
         if (!reset_n) begin
             counter <= 0;
             led <= 0;
-        end begin            
+        end else begin            
             if (counter == MAX_COUNT - 1)
                 counter <= 0;
             else
